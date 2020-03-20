@@ -1,0 +1,45 @@
+package ciclos;
+import java.util.Scanner;
+/**
+ *
+ * @author g_dgu
+ */
+public class Ciclos {
+
+    /**
+     * @param args the command line arguments
+     */
+   
+    public static void main(String[] args) {
+      // int i;
+       /*+for (i =0; i <=10; i++){
+       System.out.println("el valor de i es "+ i);
+       }*/ 
+      /* for (int i = 2; i <=10;) {
+			System.out.println("Número: " + i);
+			i++;}**/
+// tercer forma de sintaxys
+        
+      /*  int i = 0;
+		for (; i <=10;) {
+			System.out.println("Número: " + i);
+			//i += 2;
+                        i= i+1;
+		}
+                System.out.println("fin del ciclo");**/
+        
+        int numero;
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Ingrese un número:");
+ 
+		try {
+			numero = entrada.nextInt();
+			while ((numero % 10) != 0) {
+				numero++;
+			}
+			System.out.println("La decena superior es: " + numero);
+		} catch (Exception e) {
+			System.out.println("Número no válido");
+    }
+    }
+}
